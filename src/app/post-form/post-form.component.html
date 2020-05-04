@@ -1,0 +1,10 @@
+<div>
+    <button [hidden]="!hideForm" (click)="newThought()">New Thought</button>
+    <form [hidden]="hideForm">
+        <input [(ngModel)]="title" name="Title">
+        <br/>
+        <input [(ngModel)]="thought" name="Thought">
+        <br/>
+        <button type="submit">Submit!</button>
+    </form>
+</div>
